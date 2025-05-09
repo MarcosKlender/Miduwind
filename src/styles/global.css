@@ -1,1 +1,24 @@
 @import "tailwindcss";
+
+@font-face {
+    font-family: 'Onest';
+    src: url('/fonts/Onest-Regular.woff2') format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Onest';
+    src: url('/fonts/Onest-Bold.woff2') format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+:root {
+    font-family: 'Onest', system-ui, sans-serif;
+    line-height: 1.5;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+}
