@@ -13,5 +13,9 @@
         "username": "@marcosklender",
         "accentColor": "#00BCFF",
         "setMonospace": true
+    },
+    "about": {
+        "name": "Marcos Klender Carrasco",
+        "summary": "Systems Engineer with a Master's Degree in Software Engineering. More than 8 years of experience in software development."
     }
 }

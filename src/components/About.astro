@@ -1,0 +1,15 @@
+---
+interface AboutProps {
+    name: string;
+    summary: string;
+}
+
+import { about } from "@/data.json";
+
+const { name, summary } = about satisfies AboutProps;
+---
+
+<section class="py-5 text-center text-white">
+    <h1 class="text-2xl font-bold">{name}</h1>
+    <p class="pt-2.5 text-balance">{summary}</p>
+</section>
