@@ -3,14 +3,21 @@ interface HeaderProps {
     image: string;
     alt: string;
     username: string;
+    accentColor: string;
+    setMonospace: boolean
 }
 
 import { header } from "@/data.json";
 
-const { image, alt, username } = header satisfies HeaderProps;
+const { image, alt, username, accentColor, setMonospace } = header satisfies HeaderProps;
 ---
 
 <section class="flex flex-col items-center justify-center">
-    <img src={image} alt={alt} class="w-1/4" />
-    <span>{username}</span>
+    <img src={image} alt={alt} class="w-60 mask-b-from-90%" />
+    <span
+        class=`px-3 -mt-3 z-1 ${setMonospace ? "font-mono": null } bg-black 
+        border-1 rounded-xl text-[${accentColor}] border-[${accentColor}]`
+    >
+        {username}
+    </span>
 </section>

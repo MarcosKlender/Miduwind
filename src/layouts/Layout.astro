@@ -4,12 +4,14 @@ interface LayoutProps {
 	title: string;
 	description: string;
 	favicon: string;
+	topColor: string;
+	bottomColor: string;
 }
 
-import "../styles/global.css";
+import "@/styles/global.css";
 import { html } from "@/data.json";
 
-const { lang, title, description, favicon } = html satisfies LayoutProps;
+const { lang, title, description, favicon, topColor, bottomColor } = html satisfies LayoutProps;
 ---
 
 <!doctype html>
@@ -21,7 +23,7 @@ const { lang, title, description, favicon } = html satisfies LayoutProps;
 		<link rel="icon" type="image/svg+xml" href={favicon} />
 		<title>{title}</title>
 	</head>
-	<body class="w-full h-full m-0">
+	<body class=`w-full h-dvh m-0 bg-linear-to-b from-[${topColor}] to-[${bottomColor}]`>
 		<slot />
 	</body>
 </html>

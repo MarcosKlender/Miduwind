@@ -3,11 +3,15 @@
         "lang": "en",
         "title": "Marcos Klender Carrasco",
         "description": "Follow me on all my socials",
-        "favicon": "/favicon.svg"
+        "favicon": "/favicon.svg",
+        "topColor": "#000811",
+        "bottomColor": "#072E48"
     },
     "header": {
         "image": "/photo.webp",
         "alt": "The author of this astro template.",
-        "username": "@marcosklender"
+        "username": "@marcosklender",
+        "accentColor": "#00BCFF",
+        "setMonospace": true
     }
 }
