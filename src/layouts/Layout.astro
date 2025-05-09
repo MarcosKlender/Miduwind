@@ -1,14 +1,18 @@
 ---
 import "../styles/global.css";
+import { html } from "@/data.json";
+
+const { lang, title, description, favicon } = html;
 ---
 
 <!doctype html>
-<html lang="en">
+<html lang={lang}>
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<title>MiduWind</title>
+		<meta name="description" content={description} />
+		<link rel="icon" type="image/svg+xml" href={favicon} />
+		<title>{title}</title>
 	</head>
 	<body>
 		<slot />

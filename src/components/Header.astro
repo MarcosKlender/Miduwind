@@ -1,3 +1,10 @@
-<section>
-    <h1>MarcosKlender</h1>
+---
+import { header } from "@/data.json";
+
+const { image, alt, username } = header;
+---
+
+<section class="flex flex-col justify-center items-center">
+    <img src={image} alt={alt} class="w-1/4" />
+    <span>{username}</span>
 </section>

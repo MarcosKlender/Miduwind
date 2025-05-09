@@ -1,0 +1,13 @@
+{
+    "html": {
+        "lang": "en",
+        "title": "Marcos Klender Carrasco",
+        "description": "Follow me on all my socials",
+        "favicon": "/favicon.svg"
+    },
+    "header": {
+        "image": "/photo.webp",
+        "alt": "The author of this astro template.",
+        "username": "@marcosklender"
+    }
+}
