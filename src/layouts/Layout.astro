@@ -1,8 +1,15 @@
 ---
+interface LayoutProps {
+	lang: string;
+	title: string;
+	description: string;
+	favicon: string;
+}
+
 import "../styles/global.css";
 import { html } from "@/data.json";
 
-const { lang, title, description, favicon } = html;
+const { lang, title, description, favicon } = html satisfies LayoutProps;
 ---
 
 <!doctype html>
@@ -14,16 +21,7 @@ const { lang, title, description, favicon } = html;
 		<link rel="icon" type="image/svg+xml" href={favicon} />
 		<title>{title}</title>
 	</head>
-	<body>
+	<body class="w-full h-full m-0">
 		<slot />
 	</body>
 </html>
-
-<style>
-	html,
-	body {
-		margin: 0;
-		width: 100%;
-		height: 100%;
-	}
-</style>

@@ -1,10 +1,16 @@
 ---
+interface HeaderProps {
+    image: string;
+    alt: string;
+    username: string;
+}
+
 import { header } from "@/data.json";
 
-const { image, alt, username } = header;
+const { image, alt, username } = header satisfies HeaderProps;
 ---
 
-<section class="flex flex-col justify-center items-center">
+<section class="flex flex-col items-center justify-center">
     <img src={image} alt={alt} class="w-1/4" />
     <span>{username}</span>
 </section>
