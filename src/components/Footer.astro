@@ -1,15 +1,25 @@
 ---
 interface FooterProps {
+    credits: string;
+    url: string;
     textColor: string;
 }
 
 import { footer } from "@/data.json";
 
-const { textColor } = footer satisfies FooterProps;
+const { credits, url, textColor } = footer satisfies FooterProps;
 ---
 
 <footer class="pt-10 pb-2.5 text-xs text-center footer-custom">
-    <span>Made by MarcosKlender</span>
+    {
+        url ? (
+            <a href={url} target="_blank" class="hover:underline">
+                {credits}
+            </a>
+        ) : (
+            <p>{credits}</p>
+        )
+    }
 </footer>
 
 <style define:vars={{ textColor }}>
