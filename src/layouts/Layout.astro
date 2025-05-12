@@ -11,7 +11,8 @@ interface LayoutProps {
 import "@/styles/global.css";
 import { html } from "@/data.json";
 
-const { lang, title, description, favicon, topColor, bottomColor } = html satisfies LayoutProps;
+const { lang, title, description, favicon, topColor, bottomColor } =
+	html satisfies LayoutProps;
 ---
 
 <!doctype html>
@@ -23,7 +24,13 @@ const { lang, title, description, favicon, topColor, bottomColor } = html satisf
 		<link rel="icon" type="image/svg+xml" href={favicon} />
 		<title>{title}</title>
 	</head>
-	<body class=`w-5/6 md:w-2/4 mx-auto h-full m-0 bg-linear-to-b from-[${topColor}] to-[${bottomColor}]`>
+	<body class="layout-custom w-5/6 md:w-2/4 mx-auto h-full m-0">
 		<slot />
 	</body>
 </html>
+
+<style define:vars={{ topColor, bottomColor }}>
+	.layout-custom {
+		background: linear-gradient(var(--topColor), var(--bottomColor));
+	}
+</style>

@@ -12,11 +12,13 @@
         "alt": "The author of this astro template.",
         "username": "@marcosklender",
         "accentColor": "#00BCFF",
-        "setMonospace": true
+        "setMonospace": true,
+        "setVerified": true
     },
     "about": {
         "name": "Marcos Klender Carrasco",
-        "summary": "Systems Engineer with a Master's Degree in Software Engineering. More than 8 years of experience in software development."
+        "summary": "Systems Engineer with a Master's Degree in Software Engineering. More than 8 years of experience in software development.",
+        "textColor": "#F0F0F0"
     },
     "links": [
         {
@@ -70,6 +72,7 @@
     ],
     "footer": {
         "credits": "Made by MarcosKlender",
-        "url": "https://warpportfolio.netlify.app"
+        "url": "https://warpportfolio.netlify.app",
+        "textColor": "#F0F0F0"
     }
 }

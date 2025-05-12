@@ -2,14 +2,21 @@
 interface AboutProps {
     name: string;
     summary: string;
+    textColor: string;
 }
 
 import { about } from "@/data.json";
 
-const { name, summary } = about satisfies AboutProps;
+const { name, summary, textColor } = about satisfies AboutProps;
 ---
 
-<section class="py-5 text-center text-white">
+<section class="py-5 text-center about-custom">
     <h1 class="text-2xl font-bold">{name}</h1>
     <p class="pt-2.5 text-balance">{summary}</p>
 </section>
+
+<style define:vars={{ textColor }}>
+    .about-custom {
+        color: var(--textColor)
+    }
+</style>

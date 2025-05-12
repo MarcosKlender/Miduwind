@@ -4,20 +4,31 @@ interface HeaderProps {
     alt: string;
     username: string;
     accentColor: string;
-    setMonospace: boolean
+    setMonospace: boolean;
+    setVerified: boolean;
 }
 
 import { header } from "@/data.json";
+import VerifiedIcon from "@/assets/verified.svg";
 
-const { image, alt, username, accentColor, setMonospace } = header satisfies HeaderProps;
+const { image, alt, username, accentColor, setMonospace, setVerified } =
+    header satisfies HeaderProps;
 ---
 
 <section class="flex flex-col items-center justify-center pt-5">
     <img src={image} alt={alt} class="w-60 mask-b-from-90%" />
     <span
-        class=`px-3 -mt-3 z-1 ${setMonospace ? "font-mono": null } bg-black/60
-        border-1 rounded-xl text-[${accentColor}] border-[${accentColor}]`
+        class=`flex gap-1 px-3 py-0.5 -mt-3 header-custom z-1 bg-black/60
+        border-1 rounded-xl ${setMonospace ? "font-mono": "" }`
     >
         {username}
+        {setVerified && <VerifiedIcon />}
     </span>
 </section>
+
+<style define:vars={{ accentColor }}>
+    .header-custom {
+        color: var(--accentColor);
+        border-color: var(--accentColor);
+    }
+</style>
