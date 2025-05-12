@@ -1,16 +1,21 @@
 ---
-import LinkedIn from "@/assets/linkedin.svg";
+import LinkedIn from "@/assets/LinkedIn.svg";
+import WhatsApp from "@/assets/WhatsApp.svg";
+import Github from "@/assets/Github.svg";
+import AstroLogo from "@/assets/AstroLogo.svg";
 ---
 
 <a
     href="/"
-    class="flex flex-col justify-between overflow-hidden text-white transition bg-sky-900 rounded-xl h-25 hover:scale-102 group"
+    class="flex flex-col justify-between overflow-hidden text-white transition bg-sky-900 rounded-xl h-35 hover:scale-102 group"
 >
-    <span class="pt-2 pl-3 text-xs">Subtitle</span>
+    <div class="pt-2 pl-3">
+        <span class="px-2 py-1 text-xs border rounded-xl">Let's connect!</span>
+    </div>
     <div class="flex items-end justify-between">
-        <p class="pb-2 pl-3 font-bold">Title</p>
+        <p class="pb-2 pl-3 text-lg font-bold">LinkedIn</p>
         <LinkedIn
-            class="-mb-1 -mr-1 transition-transform rotate-5 group-hover:-rotate-5 group-hover:scale-115"
+            class="-mb-2 -mr-2 transition-transform size-20 rotate-5 group-hover:-rotate-5 group-hover:scale-115"
         />
     </div>
 </a>
