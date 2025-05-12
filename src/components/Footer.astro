@@ -10,17 +10,21 @@ import { footer } from "@/data.json";
 const { credits, url, textColor } = footer satisfies FooterProps;
 ---
 
-<footer class="pt-10 pb-2.5 text-xs text-center footer-custom">
-    {
-        url ? (
-            <a href={url} target="_blank" class="hover:underline">
-                {credits}
-            </a>
-        ) : (
-            <p>{credits}</p>
-        )
-    }
-</footer>
+{
+    credits ? (
+        <footer class="pt-10 pb-2.5 text-xs text-center footer-custom">
+            {url ? (
+                <a href={url} target="_blank" class="hover:underline">
+                    {credits}
+                </a>
+            ) : (
+                <p>{credits}</p>
+            )}
+        </footer>
+    ) : (
+        <br />
+    )
+}
 
 <style define:vars={{ textColor }}>
     .footer-custom {
