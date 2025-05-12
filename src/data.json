@@ -25,6 +25,7 @@
             "network": "LinkedIn",
             "message": "Let's connect!",
             "url": "https://www.linkedin.com/in/marcosklender/?locale=en_US",
+            "logo": "/LinkedIn.svg",
             "topColor": "#0077B5",
             "middleColor": "",
             "bottomColor": "#004471"
@@ -33,6 +34,7 @@
             "network": "Instagram",
             "message": "Follow me!",
             "url": "https://www.instagram.com/marcosklender",
+            "logo": "/Instagram.svg",
             "topColor": "#F58529",
             "middleColor": "#DD2A7B",
             "bottomColor": "#8134AF"
@@ -41,6 +43,7 @@
             "network": "Gmail",
             "message": "Contact me anytime!",
             "url": "mailto:marcosklender@gmail.com",
+            "logo": "/Gmail.svg",
             "topColor": "#D93025",
             "middleColor": "",
             "bottomColor": "#8B1C13"
@@ -49,6 +52,7 @@
             "network": "WhatsApp",
             "message": "Send me a message!",
             "url": "https://wa.me/5930980199488",
+            "logo": "/WhatsApp.svg",
             "topColor": "#25D366",
             "middleColor": "",
             "bottomColor": "#075E54"
@@ -57,14 +61,16 @@
             "network": "Github",
             "message": "Use this template and start it! ⭐",
             "url": "https://github.com/MarcosKlender/Miduwind",
+            "logo": "/Github.svg",
             "topColor": "#333333",
             "middleColor": "",
             "bottomColor": "#0D1117"
         },
         {
-            "network": "Astro Themes",
+            "network": "Astro",
             "message": "See more themes!",
             "url": "https://astro.build/themes/author/1479",
+            "logo": "/AstroLogo.svg",
             "topColor": "#6F42C1",
             "middleColor": "",
             "bottomColor": "#0E0E30"

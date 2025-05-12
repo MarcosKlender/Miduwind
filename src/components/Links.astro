@@ -2,19 +2,70 @@
 import SocialCard from "@/components/grid/SocialCard.astro";
 import GridTwoOne from "@/components/grid/GridTwoOne.astro";
 import GridOneTwo from "@/components/grid/GridOneTwo.astro";
+
+import { links } from "@/data.json";
+const { 0: one, 1: two, 2: three, 3: four, 4: five, 5: six } = links;
 ---
 
 <section class="flex flex-col w-full gap-2 mx-auto md:w-3/4 lg:w-2/3 2xl:w-4/5">
     <GridTwoOne>
-        <SocialCard />
-        <SocialCard />
+        <SocialCard
+            network={one.network}
+            message={one.message}
+            url={one.url}
+            logo={one.logo}
+            topColor={one.topColor}
+            middleColor={one.middleColor}
+            bottomColor={one.bottomColor}
+        />
+        <SocialCard
+            network={two.network}
+            message={two.message}
+            url={two.url}
+            logo={two.logo}
+            topColor={two.topColor}
+            middleColor={two.middleColor}
+            bottomColor={two.bottomColor}
+        />
     </GridTwoOne>
     <GridOneTwo>
-        <SocialCard />
-        <SocialCard />
+        <SocialCard
+            network={three.network}
+            message={three.message}
+            url={three.url}
+            logo={three.logo}
+            topColor={three.topColor}
+            middleColor={three.middleColor}
+            bottomColor={three.bottomColor}
+        />
+        <SocialCard
+            network={four.network}
+            message={four.message}
+            url={four.url}
+            logo={four.logo}
+            topColor={four.topColor}
+            middleColor={four.middleColor}
+            bottomColor={four.bottomColor}
+        />
     </GridOneTwo>
     <GridTwoOne>
-        <SocialCard />
-        <SocialCard />
+        <SocialCard
+            network={five.network}
+            message={five.message}
+            url={five.url}
+            logo={five.logo}
+            topColor={five.topColor}
+            middleColor={five.middleColor}
+            bottomColor={five.bottomColor}
+        />
+        <SocialCard
+            network={six.network}
+            message={six.message}
+            url={six.url}
+            logo={six.logo}
+            topColor={six.topColor}
+            middleColor={six.middleColor}
+            bottomColor={six.bottomColor}
+        />
     </GridTwoOne>
 </section>

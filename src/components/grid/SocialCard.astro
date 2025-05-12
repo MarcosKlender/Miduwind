@@ -1,21 +1,37 @@
 ---
-import LinkedIn from "@/assets/LinkedIn.svg";
-import WhatsApp from "@/assets/WhatsApp.svg";
-import Github from "@/assets/Github.svg";
-import AstroLogo from "@/assets/AstroLogo.svg";
+const { network, message, url, logo, topColor, middleColor, bottomColor } =
+    Astro.props;
 ---
 
 <a
-    href="/"
-    class="flex flex-col justify-between overflow-hidden text-white transition bg-sky-900 rounded-xl h-35 hover:scale-102 group"
+    href={url}
+    target="_blank"
+    class=`flex flex-col justify-between h-40 overflow-hidden text-white transition rounded-xl hover:scale-102 group
+    ${middleColor ? "three-color-gradient" : "two-color-gradient"}`
 >
     <div class="pt-2 pl-3">
-        <span class="px-2 py-1 text-xs border rounded-xl">Let's connect!</span>
+        <span class="px-2 py-1 text-xs border rounded-xl">{message}</span>
     </div>
     <div class="flex items-end justify-between">
-        <p class="pb-2 pl-3 text-lg font-bold">LinkedIn</p>
-        <LinkedIn
-            class="-mb-2 -mr-2 transition-transform size-20 rotate-5 group-hover:-rotate-5 group-hover:scale-115"
+        <p class="pb-2 pl-3 text-xl font-bold">{network}</p>
+        <img
+            src={logo}
+            alt=`${network} logo`
+            class="-mb-3 -mr-3 transition-transform size-25 rotate-5 group-hover:-rotate-5 group-hover:scale-125"
         />
     </div>
 </a>
+
+<style define:vars={{ topColor, middleColor, bottomColor }}>
+    .two-color-gradient {
+        background: linear-gradient(var(--topColor), var(--bottomColor));
+    }
+
+    .three-color-gradient {
+        background: linear-gradient(
+            var(--topColor),
+            var(--middleColor),
+            var(--bottomColor)
+        );
+    }
+</style>
