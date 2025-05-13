@@ -6,18 +6,18 @@ const { network, message, url, logo, topColor, middleColor, bottomColor } =
 <a
     href={url}
     target="_blank"
-    class=`flex flex-col justify-between h-40 overflow-hidden text-white transition rounded-xl hover:scale-102 group
+    class=`flex flex-col justify-between h-40 overflow-hidden text-white transition rounded-xl hover:scale-102 hover:contrast-110 group
     ${middleColor ? "three-color-gradient" : "two-color-gradient"}`
 >
     <div class="pt-2 pl-3">
-        <span class="px-2 py-1 text-xs border rounded-xl">{message}</span>
+        <span class="px-2 py-1 text-sm border rounded-xl">{message}</span>
     </div>
     <div class="flex items-end justify-between">
         <p class="pb-2 pl-3 text-xl font-bold">{network}</p>
         <img
             src={logo}
             alt=`${network} logo`
-            class="-mb-3 -mr-3 transition-transform size-25 rotate-5 group-hover:-rotate-5 group-hover:scale-125"
+            class="-mb-3 -mr-3 transition-transform size-25 -rotate-7 group-hover:-rotate-14 group-hover:scale-125"
         />
     </div>
 </a>
