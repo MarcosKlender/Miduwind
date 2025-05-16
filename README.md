@@ -4,7 +4,7 @@
 
 ![Astro](https://astro.build/assets/press/astro-icon-light-gradient.svg)
 
-[![Available at](https://img.shields.io/badge/Available%20at-Astro%20Themes-purple?style=for-the-badge&link=https://astro.build/themes/details/astrolinkhub/)](LINK_PENDIENTE)
+[![Available at](https://img.shields.io/badge/Available%20at-Astro%20Themes-purple?style=for-the-badge&link=https://astro.build/themes/details/astrolinkhub/)](https://astro.build/themes/details/miduwind/)
 
 </div>
 
@@ -49,7 +49,7 @@ Open source links page, customizable via JSON. Made with Astro 5 and Tailwind 4.
 ## About The Project
 
 > [!IMPORTANT]
-> I'm glad to announce that this project is available on [Astro Themes](LINK_PENDIENTE)! 🚀
+> I'm glad to announce that this project is available on [Astro Themes](https://astro.build/themes/details/miduwind/)! 🚀
 
 After the amazing reception of [AstroLinkHub](https://astrolinkhub.netlify.app/) I've decided to bring you an improved, modern and fully customizable link page. Inspired by the work of the talented [Midudev](https://midu.dev/) and his [Tailwind 2025 course](https://www.youtube.com/watch?v=R5EXap3vNDA), I introduce you to [Miduwind](https://miduwind.netlify.app/):
 - Using Astro (v5.7) and Tailwind (v4.1)
